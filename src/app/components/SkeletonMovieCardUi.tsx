@@ -1,3 +1,5 @@
+'use client'
+
 function SkeletonMovieCardUI() {
   return (
     <div className="flex gap-6 p-6 border rounded-lg shadow-md animate-pulse">

@@ -1,5 +1,5 @@
 'use client'
-
+import Image from "next/image";
 import { useState } from "react"
 import { MovieType } from "../types/type";
 import ExtractData from "../utils/ExtractData";
@@ -50,7 +50,7 @@ export default function MovieForm() {
         {details && !loadingState && (
           <div className="w-full bg-white/10 backdrop-blur-md rounded-2xl shadow-lg p-6 flex flex-col md:flex-row gap-6 items-center border border-white/20 mt-4">
             <div className="flex-shrink-0 w-full md:w-40 flex justify-center">
-              <img
+              <Image
                 src={details.poster}
                 alt={details.title}
                 className="rounded-xl w-40 h-60 object-cover shadow-md border border-white/20 bg-white/10"

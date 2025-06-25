@@ -1,7 +1,6 @@
 import { MovieType } from "../types/type";
-
-
-export default function ExtractData(raw:any ):MovieType{
+import { RawMovie } from "../types/type";
+export default function ExtractData(raw:RawMovie ):MovieType{
      
      
     return {

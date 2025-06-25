@@ -8,3 +8,12 @@ export interface MovieType{
   imdbID: string;
 
 }
+export interface RawMovie {
+  Title: string;
+  Year: string;
+  imdbRating: string;
+  Poster: string;
+  Plot: string;
+  genre: string;
+  imdbID: string;
+}

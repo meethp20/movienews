@@ -53,6 +53,8 @@ export default function MovieForm() {
               <Image
                 src={details.poster}
                 alt={details.title}
+                 width={160}
+                 height={240}
                 className="rounded-xl w-40 h-60 object-cover shadow-md border border-white/20 bg-white/10"
               />
             </div>

@@ -12,13 +12,11 @@ export async function GET (request : NextRequest){
     if(!title || typeof title != 'string'){
         return NextResponse.json({error:'missing or invalid title'},{status:400})
     }
-    try{
+   
             const res = await fetch(`https://www.omdbapi.com/?apikey=${api}&t=${title}`)
             const data = await res.json()
             return NextResponse.json(data);
             
-    }catch(err){
-        return NextResponse.json({err:'failed to fetch movie'},{status:500})
-    }
+    
 
 }
